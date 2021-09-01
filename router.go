@@ -27,7 +27,7 @@ var (
 )
 
 // RouterABI is the input ABI used to generate the binding from.
-const RouterABI = "[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_factory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_WETH\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"WETH\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountADesired\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBDesired\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"addLiquidity\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenDesired\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"addLiquidityETH\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveOut\",\"type\":\"uint256\"}],\"name\":\"getAmountIn\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveOut\",\"type\":\"uint256\"}],\"name\":\"getAmountOut\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"}],\"name\":\"getAmountsIn\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"}],\"name\":\"getAmountsOut\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"getPairAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pair\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getPairAddressETH\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pair\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"getReserves\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"reserveA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveB\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveB\",\"type\":\"uint256\"}],\"name\":\"quote\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"removeLiquidity\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"removeLiquidityETH\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"removeLiquidityETHSupportingFeeOnTransferTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"approveMax\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"removeLiquidityETHWithPermit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"approveMax\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"removeLiquidityETHWithPermitSupportingFeeOnTransferTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"approveMax\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"removeLiquidityWithPermit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapETHForExactTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactETHForTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactETHForTokensSupportingFeeOnTransferTokens\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForETH\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForETHSupportingFeeOnTransferTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForTokensSupportingFeeOnTransferTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMax\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapTokensForExactETH\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMax\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapTokensForExactTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}]"
+const RouterABI = "[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_factory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_WETH\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"AddLiquidity\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"wETH\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"AddLiquidityETH\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"RemoveLiquidity\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"wETH\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"RemoveLiquidityETH\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"SwapETHForExactTokens\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"SwapExactETHForTokens\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"SwapExactTokensForETH\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"SwapExactTokensForTokens\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"SwapTokensForExactETH\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"SwapTokensForExactTokens\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"WETH\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountADesired\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBDesired\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"addLiquidity\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenDesired\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"addLiquidityETH\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveOut\",\"type\":\"uint256\"}],\"name\":\"getAmountIn\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveOut\",\"type\":\"uint256\"}],\"name\":\"getAmountOut\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"}],\"name\":\"getAmountsIn\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"}],\"name\":\"getAmountsOut\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"getPairAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pair\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getPairAddressETH\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pair\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"getReserves\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"reserveA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveB\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveB\",\"type\":\"uint256\"}],\"name\":\"quote\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"removeLiquidity\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"removeLiquidityETH\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"removeLiquidityETHSupportingFeeOnTransferTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"approveMax\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"removeLiquidityETHWithPermit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountToken\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountTokenMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountETHMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"approveMax\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"removeLiquidityETHWithPermitSupportingFeeOnTransferTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountETH\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountBMin\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"approveMax\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"removeLiquidityWithPermit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountA\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountB\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapETHForExactTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactETHForTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactETHForTokensSupportingFeeOnTransferTokens\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForETH\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForETHSupportingFeeOnTransferTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapExactTokensForTokensSupportingFeeOnTransferTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMax\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapTokensForExactETH\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMax\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swapTokensForExactTokens\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}]"
 
 // Router is an auto generated Go binding around an Ethereum contract.
 type Router struct {
@@ -871,4 +871,1578 @@ func (_Router *RouterSession) Receive() (*types.Transaction, error) {
 // Solidity: receive() payable returns()
 func (_Router *RouterTransactorSession) Receive() (*types.Transaction, error) {
 	return _Router.Contract.Receive(&_Router.TransactOpts)
+}
+
+// RouterAddLiquidityIterator is returned from FilterAddLiquidity and is used to iterate over the raw logs and unpacked data for AddLiquidity events raised by the Router contract.
+type RouterAddLiquidityIterator struct {
+	Event *RouterAddLiquidity // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterAddLiquidityIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterAddLiquidity)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterAddLiquidity)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterAddLiquidityIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterAddLiquidityIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterAddLiquidity represents a AddLiquidity event raised by the Router contract.
+type RouterAddLiquidity struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	Liquidity *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterAddLiquidity is a free log retrieval operation binding the contract event 0x70829f854c394001fd125c04cd515bdb7126d942ca2086dca450e90a04ca7076.
+//
+// Solidity: event AddLiquidity(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterAddLiquidity(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterAddLiquidityIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "AddLiquidity", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterAddLiquidityIterator{contract: _Router.contract, event: "AddLiquidity", logs: logs, sub: sub}, nil
+}
+
+// WatchAddLiquidity is a free log subscription operation binding the contract event 0x70829f854c394001fd125c04cd515bdb7126d942ca2086dca450e90a04ca7076.
+//
+// Solidity: event AddLiquidity(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchAddLiquidity(opts *bind.WatchOpts, sink chan<- *RouterAddLiquidity, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "AddLiquidity", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterAddLiquidity)
+				if err := _Router.contract.UnpackLog(event, "AddLiquidity", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseAddLiquidity is a log parse operation binding the contract event 0x70829f854c394001fd125c04cd515bdb7126d942ca2086dca450e90a04ca7076.
+//
+// Solidity: event AddLiquidity(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseAddLiquidity(log types.Log) (*RouterAddLiquidity, error) {
+	event := new(RouterAddLiquidity)
+	if err := _Router.contract.UnpackLog(event, "AddLiquidity", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterAddLiquidityETHIterator is returned from FilterAddLiquidityETH and is used to iterate over the raw logs and unpacked data for AddLiquidityETH events raised by the Router contract.
+type RouterAddLiquidityETHIterator struct {
+	Event *RouterAddLiquidityETH // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterAddLiquidityETHIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterAddLiquidityETH)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterAddLiquidityETH)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterAddLiquidityETHIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterAddLiquidityETHIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterAddLiquidityETH represents a AddLiquidityETH event raised by the Router contract.
+type RouterAddLiquidityETH struct {
+	Token       common.Address
+	WETH        common.Address
+	AmountToken *big.Int
+	AmountETH   *big.Int
+	Liquidity   *big.Int
+	To          common.Address
+	Timestamp   *big.Int
+	Raw         types.Log // Blockchain specific contextual infos
+}
+
+// FilterAddLiquidityETH is a free log retrieval operation binding the contract event 0xb863c31eae46cb22c5cd68d5dee172573ed1e6307740654bf5d0de3b31c75051.
+//
+// Solidity: event AddLiquidityETH(address indexed token, address indexed wETH, uint256 amountToken, uint256 amountETH, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterAddLiquidityETH(opts *bind.FilterOpts, token []common.Address, wETH []common.Address) (*RouterAddLiquidityETHIterator, error) {
+
+	var tokenRule []interface{}
+	for _, tokenItem := range token {
+		tokenRule = append(tokenRule, tokenItem)
+	}
+	var wETHRule []interface{}
+	for _, wETHItem := range wETH {
+		wETHRule = append(wETHRule, wETHItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "AddLiquidityETH", tokenRule, wETHRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterAddLiquidityETHIterator{contract: _Router.contract, event: "AddLiquidityETH", logs: logs, sub: sub}, nil
+}
+
+// WatchAddLiquidityETH is a free log subscription operation binding the contract event 0xb863c31eae46cb22c5cd68d5dee172573ed1e6307740654bf5d0de3b31c75051.
+//
+// Solidity: event AddLiquidityETH(address indexed token, address indexed wETH, uint256 amountToken, uint256 amountETH, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchAddLiquidityETH(opts *bind.WatchOpts, sink chan<- *RouterAddLiquidityETH, token []common.Address, wETH []common.Address) (event.Subscription, error) {
+
+	var tokenRule []interface{}
+	for _, tokenItem := range token {
+		tokenRule = append(tokenRule, tokenItem)
+	}
+	var wETHRule []interface{}
+	for _, wETHItem := range wETH {
+		wETHRule = append(wETHRule, wETHItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "AddLiquidityETH", tokenRule, wETHRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterAddLiquidityETH)
+				if err := _Router.contract.UnpackLog(event, "AddLiquidityETH", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseAddLiquidityETH is a log parse operation binding the contract event 0xb863c31eae46cb22c5cd68d5dee172573ed1e6307740654bf5d0de3b31c75051.
+//
+// Solidity: event AddLiquidityETH(address indexed token, address indexed wETH, uint256 amountToken, uint256 amountETH, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseAddLiquidityETH(log types.Log) (*RouterAddLiquidityETH, error) {
+	event := new(RouterAddLiquidityETH)
+	if err := _Router.contract.UnpackLog(event, "AddLiquidityETH", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterRemoveLiquidityIterator is returned from FilterRemoveLiquidity and is used to iterate over the raw logs and unpacked data for RemoveLiquidity events raised by the Router contract.
+type RouterRemoveLiquidityIterator struct {
+	Event *RouterRemoveLiquidity // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterRemoveLiquidityIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterRemoveLiquidity)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterRemoveLiquidity)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterRemoveLiquidityIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterRemoveLiquidityIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterRemoveLiquidity represents a RemoveLiquidity event raised by the Router contract.
+type RouterRemoveLiquidity struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	Liquidity *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterRemoveLiquidity is a free log retrieval operation binding the contract event 0x4f7c14b01ce19dfaf635915adc1684ea967c3cfbc4490ea5a940b164a247ed30.
+//
+// Solidity: event RemoveLiquidity(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterRemoveLiquidity(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterRemoveLiquidityIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "RemoveLiquidity", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterRemoveLiquidityIterator{contract: _Router.contract, event: "RemoveLiquidity", logs: logs, sub: sub}, nil
+}
+
+// WatchRemoveLiquidity is a free log subscription operation binding the contract event 0x4f7c14b01ce19dfaf635915adc1684ea967c3cfbc4490ea5a940b164a247ed30.
+//
+// Solidity: event RemoveLiquidity(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchRemoveLiquidity(opts *bind.WatchOpts, sink chan<- *RouterRemoveLiquidity, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "RemoveLiquidity", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterRemoveLiquidity)
+				if err := _Router.contract.UnpackLog(event, "RemoveLiquidity", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseRemoveLiquidity is a log parse operation binding the contract event 0x4f7c14b01ce19dfaf635915adc1684ea967c3cfbc4490ea5a940b164a247ed30.
+//
+// Solidity: event RemoveLiquidity(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseRemoveLiquidity(log types.Log) (*RouterRemoveLiquidity, error) {
+	event := new(RouterRemoveLiquidity)
+	if err := _Router.contract.UnpackLog(event, "RemoveLiquidity", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterRemoveLiquidityETHIterator is returned from FilterRemoveLiquidityETH and is used to iterate over the raw logs and unpacked data for RemoveLiquidityETH events raised by the Router contract.
+type RouterRemoveLiquidityETHIterator struct {
+	Event *RouterRemoveLiquidityETH // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterRemoveLiquidityETHIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterRemoveLiquidityETH)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterRemoveLiquidityETH)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterRemoveLiquidityETHIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterRemoveLiquidityETHIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterRemoveLiquidityETH represents a RemoveLiquidityETH event raised by the Router contract.
+type RouterRemoveLiquidityETH struct {
+	Token       common.Address
+	WETH        common.Address
+	AmountToken *big.Int
+	AmountETH   *big.Int
+	Liquidity   *big.Int
+	To          common.Address
+	Timestamp   *big.Int
+	Raw         types.Log // Blockchain specific contextual infos
+}
+
+// FilterRemoveLiquidityETH is a free log retrieval operation binding the contract event 0x09c92531a48e6cef19608756e612d758190640fc95a295721a9f2d6d5e85431c.
+//
+// Solidity: event RemoveLiquidityETH(address indexed token, address indexed wETH, uint256 amountToken, uint256 amountETH, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterRemoveLiquidityETH(opts *bind.FilterOpts, token []common.Address, wETH []common.Address) (*RouterRemoveLiquidityETHIterator, error) {
+
+	var tokenRule []interface{}
+	for _, tokenItem := range token {
+		tokenRule = append(tokenRule, tokenItem)
+	}
+	var wETHRule []interface{}
+	for _, wETHItem := range wETH {
+		wETHRule = append(wETHRule, wETHItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "RemoveLiquidityETH", tokenRule, wETHRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterRemoveLiquidityETHIterator{contract: _Router.contract, event: "RemoveLiquidityETH", logs: logs, sub: sub}, nil
+}
+
+// WatchRemoveLiquidityETH is a free log subscription operation binding the contract event 0x09c92531a48e6cef19608756e612d758190640fc95a295721a9f2d6d5e85431c.
+//
+// Solidity: event RemoveLiquidityETH(address indexed token, address indexed wETH, uint256 amountToken, uint256 amountETH, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchRemoveLiquidityETH(opts *bind.WatchOpts, sink chan<- *RouterRemoveLiquidityETH, token []common.Address, wETH []common.Address) (event.Subscription, error) {
+
+	var tokenRule []interface{}
+	for _, tokenItem := range token {
+		tokenRule = append(tokenRule, tokenItem)
+	}
+	var wETHRule []interface{}
+	for _, wETHItem := range wETH {
+		wETHRule = append(wETHRule, wETHItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "RemoveLiquidityETH", tokenRule, wETHRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterRemoveLiquidityETH)
+				if err := _Router.contract.UnpackLog(event, "RemoveLiquidityETH", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseRemoveLiquidityETH is a log parse operation binding the contract event 0x09c92531a48e6cef19608756e612d758190640fc95a295721a9f2d6d5e85431c.
+//
+// Solidity: event RemoveLiquidityETH(address indexed token, address indexed wETH, uint256 amountToken, uint256 amountETH, uint256 liquidity, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseRemoveLiquidityETH(log types.Log) (*RouterRemoveLiquidityETH, error) {
+	event := new(RouterRemoveLiquidityETH)
+	if err := _Router.contract.UnpackLog(event, "RemoveLiquidityETH", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterSwapETHForExactTokensIterator is returned from FilterSwapETHForExactTokens and is used to iterate over the raw logs and unpacked data for SwapETHForExactTokens events raised by the Router contract.
+type RouterSwapETHForExactTokensIterator struct {
+	Event *RouterSwapETHForExactTokens // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterSwapETHForExactTokensIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterSwapETHForExactTokens)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterSwapETHForExactTokens)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterSwapETHForExactTokensIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterSwapETHForExactTokensIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterSwapETHForExactTokens represents a SwapETHForExactTokens event raised by the Router contract.
+type RouterSwapETHForExactTokens struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterSwapETHForExactTokens is a free log retrieval operation binding the contract event 0x1840aecc9e9f626bff78baba08ba4a71d37c1895b0fe1fd61dbbdfed2c6ea276.
+//
+// Solidity: event SwapETHForExactTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterSwapETHForExactTokens(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterSwapETHForExactTokensIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "SwapETHForExactTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterSwapETHForExactTokensIterator{contract: _Router.contract, event: "SwapETHForExactTokens", logs: logs, sub: sub}, nil
+}
+
+// WatchSwapETHForExactTokens is a free log subscription operation binding the contract event 0x1840aecc9e9f626bff78baba08ba4a71d37c1895b0fe1fd61dbbdfed2c6ea276.
+//
+// Solidity: event SwapETHForExactTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchSwapETHForExactTokens(opts *bind.WatchOpts, sink chan<- *RouterSwapETHForExactTokens, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "SwapETHForExactTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterSwapETHForExactTokens)
+				if err := _Router.contract.UnpackLog(event, "SwapETHForExactTokens", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseSwapETHForExactTokens is a log parse operation binding the contract event 0x1840aecc9e9f626bff78baba08ba4a71d37c1895b0fe1fd61dbbdfed2c6ea276.
+//
+// Solidity: event SwapETHForExactTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseSwapETHForExactTokens(log types.Log) (*RouterSwapETHForExactTokens, error) {
+	event := new(RouterSwapETHForExactTokens)
+	if err := _Router.contract.UnpackLog(event, "SwapETHForExactTokens", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterSwapExactETHForTokensIterator is returned from FilterSwapExactETHForTokens and is used to iterate over the raw logs and unpacked data for SwapExactETHForTokens events raised by the Router contract.
+type RouterSwapExactETHForTokensIterator struct {
+	Event *RouterSwapExactETHForTokens // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterSwapExactETHForTokensIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterSwapExactETHForTokens)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterSwapExactETHForTokens)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterSwapExactETHForTokensIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterSwapExactETHForTokensIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterSwapExactETHForTokens represents a SwapExactETHForTokens event raised by the Router contract.
+type RouterSwapExactETHForTokens struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterSwapExactETHForTokens is a free log retrieval operation binding the contract event 0x085ff8378ac2c686465dcb284d6a37a628364ca60ef681f1bdcd6de94baf4821.
+//
+// Solidity: event SwapExactETHForTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterSwapExactETHForTokens(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterSwapExactETHForTokensIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "SwapExactETHForTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterSwapExactETHForTokensIterator{contract: _Router.contract, event: "SwapExactETHForTokens", logs: logs, sub: sub}, nil
+}
+
+// WatchSwapExactETHForTokens is a free log subscription operation binding the contract event 0x085ff8378ac2c686465dcb284d6a37a628364ca60ef681f1bdcd6de94baf4821.
+//
+// Solidity: event SwapExactETHForTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchSwapExactETHForTokens(opts *bind.WatchOpts, sink chan<- *RouterSwapExactETHForTokens, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "SwapExactETHForTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterSwapExactETHForTokens)
+				if err := _Router.contract.UnpackLog(event, "SwapExactETHForTokens", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseSwapExactETHForTokens is a log parse operation binding the contract event 0x085ff8378ac2c686465dcb284d6a37a628364ca60ef681f1bdcd6de94baf4821.
+//
+// Solidity: event SwapExactETHForTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseSwapExactETHForTokens(log types.Log) (*RouterSwapExactETHForTokens, error) {
+	event := new(RouterSwapExactETHForTokens)
+	if err := _Router.contract.UnpackLog(event, "SwapExactETHForTokens", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterSwapExactTokensForETHIterator is returned from FilterSwapExactTokensForETH and is used to iterate over the raw logs and unpacked data for SwapExactTokensForETH events raised by the Router contract.
+type RouterSwapExactTokensForETHIterator struct {
+	Event *RouterSwapExactTokensForETH // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterSwapExactTokensForETHIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterSwapExactTokensForETH)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterSwapExactTokensForETH)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterSwapExactTokensForETHIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterSwapExactTokensForETHIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterSwapExactTokensForETH represents a SwapExactTokensForETH event raised by the Router contract.
+type RouterSwapExactTokensForETH struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterSwapExactTokensForETH is a free log retrieval operation binding the contract event 0x48f2a94467010839463245465bea212d4cd39de388718fb3b9d397a6022be709.
+//
+// Solidity: event SwapExactTokensForETH(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterSwapExactTokensForETH(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterSwapExactTokensForETHIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "SwapExactTokensForETH", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterSwapExactTokensForETHIterator{contract: _Router.contract, event: "SwapExactTokensForETH", logs: logs, sub: sub}, nil
+}
+
+// WatchSwapExactTokensForETH is a free log subscription operation binding the contract event 0x48f2a94467010839463245465bea212d4cd39de388718fb3b9d397a6022be709.
+//
+// Solidity: event SwapExactTokensForETH(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchSwapExactTokensForETH(opts *bind.WatchOpts, sink chan<- *RouterSwapExactTokensForETH, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "SwapExactTokensForETH", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterSwapExactTokensForETH)
+				if err := _Router.contract.UnpackLog(event, "SwapExactTokensForETH", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseSwapExactTokensForETH is a log parse operation binding the contract event 0x48f2a94467010839463245465bea212d4cd39de388718fb3b9d397a6022be709.
+//
+// Solidity: event SwapExactTokensForETH(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseSwapExactTokensForETH(log types.Log) (*RouterSwapExactTokensForETH, error) {
+	event := new(RouterSwapExactTokensForETH)
+	if err := _Router.contract.UnpackLog(event, "SwapExactTokensForETH", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterSwapExactTokensForTokensIterator is returned from FilterSwapExactTokensForTokens and is used to iterate over the raw logs and unpacked data for SwapExactTokensForTokens events raised by the Router contract.
+type RouterSwapExactTokensForTokensIterator struct {
+	Event *RouterSwapExactTokensForTokens // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterSwapExactTokensForTokensIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterSwapExactTokensForTokens)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterSwapExactTokensForTokens)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterSwapExactTokensForTokensIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterSwapExactTokensForTokensIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterSwapExactTokensForTokens represents a SwapExactTokensForTokens event raised by the Router contract.
+type RouterSwapExactTokensForTokens struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterSwapExactTokensForTokens is a free log retrieval operation binding the contract event 0x8e19db6ccbe6735914ad215d66516acb5c1a5c4b421a3f94a66db7cafe793a64.
+//
+// Solidity: event SwapExactTokensForTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterSwapExactTokensForTokens(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterSwapExactTokensForTokensIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "SwapExactTokensForTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterSwapExactTokensForTokensIterator{contract: _Router.contract, event: "SwapExactTokensForTokens", logs: logs, sub: sub}, nil
+}
+
+// WatchSwapExactTokensForTokens is a free log subscription operation binding the contract event 0x8e19db6ccbe6735914ad215d66516acb5c1a5c4b421a3f94a66db7cafe793a64.
+//
+// Solidity: event SwapExactTokensForTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchSwapExactTokensForTokens(opts *bind.WatchOpts, sink chan<- *RouterSwapExactTokensForTokens, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "SwapExactTokensForTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterSwapExactTokensForTokens)
+				if err := _Router.contract.UnpackLog(event, "SwapExactTokensForTokens", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseSwapExactTokensForTokens is a log parse operation binding the contract event 0x8e19db6ccbe6735914ad215d66516acb5c1a5c4b421a3f94a66db7cafe793a64.
+//
+// Solidity: event SwapExactTokensForTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseSwapExactTokensForTokens(log types.Log) (*RouterSwapExactTokensForTokens, error) {
+	event := new(RouterSwapExactTokensForTokens)
+	if err := _Router.contract.UnpackLog(event, "SwapExactTokensForTokens", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterSwapTokensForExactETHIterator is returned from FilterSwapTokensForExactETH and is used to iterate over the raw logs and unpacked data for SwapTokensForExactETH events raised by the Router contract.
+type RouterSwapTokensForExactETHIterator struct {
+	Event *RouterSwapTokensForExactETH // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterSwapTokensForExactETHIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterSwapTokensForExactETH)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterSwapTokensForExactETH)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterSwapTokensForExactETHIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterSwapTokensForExactETHIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterSwapTokensForExactETH represents a SwapTokensForExactETH event raised by the Router contract.
+type RouterSwapTokensForExactETH struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterSwapTokensForExactETH is a free log retrieval operation binding the contract event 0x321463b21ddb55f2ab54e9d811532ffa21e2c5af7280bea23f2eb20cdd0b2994.
+//
+// Solidity: event SwapTokensForExactETH(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterSwapTokensForExactETH(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterSwapTokensForExactETHIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "SwapTokensForExactETH", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterSwapTokensForExactETHIterator{contract: _Router.contract, event: "SwapTokensForExactETH", logs: logs, sub: sub}, nil
+}
+
+// WatchSwapTokensForExactETH is a free log subscription operation binding the contract event 0x321463b21ddb55f2ab54e9d811532ffa21e2c5af7280bea23f2eb20cdd0b2994.
+//
+// Solidity: event SwapTokensForExactETH(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchSwapTokensForExactETH(opts *bind.WatchOpts, sink chan<- *RouterSwapTokensForExactETH, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "SwapTokensForExactETH", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterSwapTokensForExactETH)
+				if err := _Router.contract.UnpackLog(event, "SwapTokensForExactETH", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseSwapTokensForExactETH is a log parse operation binding the contract event 0x321463b21ddb55f2ab54e9d811532ffa21e2c5af7280bea23f2eb20cdd0b2994.
+//
+// Solidity: event SwapTokensForExactETH(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseSwapTokensForExactETH(log types.Log) (*RouterSwapTokensForExactETH, error) {
+	event := new(RouterSwapTokensForExactETH)
+	if err := _Router.contract.UnpackLog(event, "SwapTokensForExactETH", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// RouterSwapTokensForExactTokensIterator is returned from FilterSwapTokensForExactTokens and is used to iterate over the raw logs and unpacked data for SwapTokensForExactTokens events raised by the Router contract.
+type RouterSwapTokensForExactTokensIterator struct {
+	Event *RouterSwapTokensForExactTokens // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *RouterSwapTokensForExactTokensIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(RouterSwapTokensForExactTokens)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(RouterSwapTokensForExactTokens)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *RouterSwapTokensForExactTokensIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *RouterSwapTokensForExactTokensIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// RouterSwapTokensForExactTokens represents a SwapTokensForExactTokens event raised by the Router contract.
+type RouterSwapTokensForExactTokens struct {
+	TokenA    common.Address
+	TokenB    common.Address
+	AmountA   *big.Int
+	AmountB   *big.Int
+	To        common.Address
+	Timestamp *big.Int
+	Raw       types.Log // Blockchain specific contextual infos
+}
+
+// FilterSwapTokensForExactTokens is a free log retrieval operation binding the contract event 0x0925dd822b0ed86d5f110dce4845c1db260efca8469e3d65fd7237900a3acae5.
+//
+// Solidity: event SwapTokensForExactTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) FilterSwapTokensForExactTokens(opts *bind.FilterOpts, tokenA []common.Address, tokenB []common.Address) (*RouterSwapTokensForExactTokensIterator, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.FilterLogs(opts, "SwapTokensForExactTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return &RouterSwapTokensForExactTokensIterator{contract: _Router.contract, event: "SwapTokensForExactTokens", logs: logs, sub: sub}, nil
+}
+
+// WatchSwapTokensForExactTokens is a free log subscription operation binding the contract event 0x0925dd822b0ed86d5f110dce4845c1db260efca8469e3d65fd7237900a3acae5.
+//
+// Solidity: event SwapTokensForExactTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) WatchSwapTokensForExactTokens(opts *bind.WatchOpts, sink chan<- *RouterSwapTokensForExactTokens, tokenA []common.Address, tokenB []common.Address) (event.Subscription, error) {
+
+	var tokenARule []interface{}
+	for _, tokenAItem := range tokenA {
+		tokenARule = append(tokenARule, tokenAItem)
+	}
+	var tokenBRule []interface{}
+	for _, tokenBItem := range tokenB {
+		tokenBRule = append(tokenBRule, tokenBItem)
+	}
+
+	logs, sub, err := _Router.contract.WatchLogs(opts, "SwapTokensForExactTokens", tokenARule, tokenBRule)
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(RouterSwapTokensForExactTokens)
+				if err := _Router.contract.UnpackLog(event, "SwapTokensForExactTokens", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseSwapTokensForExactTokens is a log parse operation binding the contract event 0x0925dd822b0ed86d5f110dce4845c1db260efca8469e3d65fd7237900a3acae5.
+//
+// Solidity: event SwapTokensForExactTokens(address indexed tokenA, address indexed tokenB, uint256 amountA, uint256 amountB, address to, uint256 timestamp)
+func (_Router *RouterFilterer) ParseSwapTokensForExactTokens(log types.Log) (*RouterSwapTokensForExactTokens, error) {
+	event := new(RouterSwapTokensForExactTokens)
+	if err := _Router.contract.UnpackLog(event, "SwapTokensForExactTokens", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
 }
